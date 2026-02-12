@@ -1,0 +1,165 @@
+/* --- sign.css --- */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #252B42; /* Your Dark Navy theme color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Back to Home Link */
+.back-home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.back-home:hover {
+    transform: translateX(-5px);
+    opacity: 0.8;
+}
+
+/* The Login Card */
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.4s ease; /* Card Zoom Effect */
+}
+
+.auth-card:hover {
+    transform: scale(1.02); /* Slight zoom when hovering over the whole card */
+}
+
+.auth-card h2 {
+    color: #252B42;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    background: #F9F9F9;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #8D5CF6;
+    background: #fff;
+}
+
+/* Login Button */
+.btn-submit {
+    background: #8D5CF6;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #7342d6;
+    transform: scale(1.05); /* Button Zoom */
+    box-shadow: 0 5px 15px rgba(141, 92, 246, 0.4);
+}
+
+/* Footer text inside card */
+.auth-card p {
+    margin: 20px 0;
+    color: #737373;
+    font-size: 14px;
+}
+
+.auth-card p a {
+    color: #8D5CF6;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Social Login Section */
+.divider {
+    margin: 25px 0;
+    position: relative;
+    border-top: 1px solid #E6E6E6;
+}
+
+.divider span {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0 15px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    background: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Specific Social Colors & Zooms */
+.btn-google:hover {
+    background: #fdfdfd;
+    transform: scale(1.05);
+}
+
+.btn-github {
+    background: #24292e !important;
+    color: white;
+}
+
+.btn-github:hover {
+    background: #333 !important;
+    transform: scale(1.05);
+}
